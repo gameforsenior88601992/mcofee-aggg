@@ -29,6 +29,13 @@
             border-radius: 0.5rem;
             transition: all 0.3s ease;
         }
+        /* Hamburger Menu Icon */
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 5px 0;
+        }
     </style>
 </head>
 <body class="bg-gray-100 font-sans">
@@ -39,11 +46,20 @@
                 <span class="text-mcafee-red text-3xl font-extrabold">McAfee</span>
                 <span class="ml-2">Support</span>
             </div>
-            <nav class="space-x-4">
-                <a href="#home" class="hover:text-mcafee-red">Home</a>
-                <a href="#support" class="hover:text-mcafee-red">Support</a>
-                <a href="#faqs" class="hover:text-mcafee-red">FAQs</a>
-                <a href="#contact" class="hover:text-mcafee-red">Contact</a>
+            <!-- Hamburger Menu for Mobile -->
+            <div class="md:hidden">
+                <button id="hamburger-btn" class="hamburger focus:outline-none">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+            </div>
+            <!-- Navigation Links -->
+            <nav id="nav-menu" class="hidden md:flex md:space-x-4 absolute md:static top-16 left-0 w-full md:w-auto bg-mcafee-dark md:bg-transparent flex-col md:flex-row items-center md:items-start p-4 md:p-0">
+                <a href="#home" class="block py-2 md:py-0 hover:text-mcafee-red">Home</a>
+                <a href="#support" class="block py-2 md:py-0 hover:text-mcafee-red">Support</a>
+                <a href="#faqs" class="block py-2 md:py-0 hover:text-mcafee-red">FAQs</a>
+                <a href="#contact" class="block py-2 md:py-0 hover:text-mcafee-red">Contact</a>
             </nav>
         </div>
     </header>
@@ -181,6 +197,13 @@
             answer.classList.toggle('hidden');
             icon.textContent = answer.classList.contains('hidden') ? '+' : '−';
         }
+
+        // Hamburger Menu Toggle
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const navMenu = document.getElementById('nav-menu');
+        hamburgerBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('hidden');
+        });
     </script>
 </body>
 </html>
