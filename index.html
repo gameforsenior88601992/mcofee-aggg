@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McAfee Support | Call Now for Help</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom McAfee Colors */
+        .bg-mcafee-red { background-color: #C8102E; }
+        .text-mcafee-red { color: #C8102E; }
+        .bg-mcafee-dark { background-color: #1A1A1A; }
+        .text-mcafee-dark { color: #1A1A1A; }
+        .hover\:bg-mcafee-red-dark:hover { background-color: #a50e27; }
+        /* Animation for CTA */
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .animate-pulse-cta {
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-mcafee-dark text-white py-4 sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="text-2xl font-bold flex items-center">
+                
+                McAfee Support
+            </div>
+            <nav class="space-x-4">
+                <a href="#home" class="hover:text-mcafee-red">Home</a>
+                <a href="#support" class="hover:text-mcafee-red">Support</a>
+                <a href="#faqs" class="hover:text-mcafee-red">FAQs</a>
+                <a href="#contact" class="hover:text-mcafee-red">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Call CTA -->
+    <section id="home" class="bg-mcafee-red text-white py-20 text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">McAfee Support – We’re Here to Help!</h1>
+            <p class="text-lg mb-6">Facing issues with McAfee? Call our 24/7 toll-free number for expert assistance.</p>
+            <a href="tel:+18447092550" class="bg-white text-mcafee-red px-8 py-4 text-xl font-semibold rounded-full inline-block animate-pulse-cta hover:bg-gray-200">Call +1-844-709-2550</a>
+        </div>
+    </section>
+
+    <!-- Support Options -->
+    <section id="support" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-mcafee-dark text-center mb-10">What Do You Need Help With?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-semibold text-mcafee-red mb-4">Activate Your Product</h3>
+                    <p class="mb-4 text-gray-600">Struggling to activate your McAfee subscription? Call us for quick help.</p>
+                    <a href="tel:+18447092550" class="text-mcafee-red hover:underline">Call Now</a>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-semibold text-mcafee-red mb-4">Fix Technical Issues</h3>
+                    <p class="mb-4 text-gray-600">Installation or performance problems? Our experts can resolve them.</p>
+                    <a href="tel:+18447092550" class="text-mcafee-red hover:underline">Call Now</a>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-semibold text-mcafee-red mb-4">Billing & Subscriptions</h3>
+                    <p class="mb-4 text-gray-600">Need help with payments or renewals? Contact us today.</p>
+                    <a href="tel:+18447092550" class="text-mcafee-red hover:underline">Call Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section id="faqs" class="bg-gray-200 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-mcafee-dark text-center mb-10">Frequently Asked Questions</h2>
+            <div class="space-y-4 max-w-3xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button class="w-full text-left text-lg font-semibold text-mcafee-red flex justify-between items-center" onclick="toggleFAQ(this)">
+                        How do I activate my McAfee subscription?
+                        <span class="text-mcafee-red">+</span>
+                    </button>
+                    <div class="hidden mt-2 text-gray-600">
+                        Call +1-844-709-2550 for expert guidance on activating your product with your key.
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button class="w-full text-left text-lg font-semibold text-mcafee-red flex justify-between items-center" onclick="toggleFAQ(this)">
+                        Why is my McAfee software not working?
+                        <span class="text-mcafee-red">+</span>
+                    </button>
+                    <div class="hidden mt-2 text-gray-600">
+                        Dial +1-844-709-2550, and our team will troubleshoot any software issues.
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button class="w-full text-left text-lg font-semibold text-mcafee-red flex justify-between items-center" onclick="toggleFAQ(this)">
+                        How can I manage my subscription?
+                        <span class="text-mcafee-red">+</span>
+                    </button>
+                    <div class="hidden mt-2 text-gray-600">
+                        Contact us at +1-844-709-2550 to update, renew, or cancel your subscription.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-mcafee-dark text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-10">Contact Us Anytime</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="text-center md:text-left">
+                    <h3 class="text-xl font-semibold mb-4">24/7 Support Line</h3>
+                    <p class="mb-4">Our team is just a call away. Reach out for instant help with McAfee.</p>
+                    <p class="text-2xl font-bold text-mcafee-red">+1-844-709-2550</p>
+                    <p class="mt-4">Other ways to connect:</p>
+                    <ul class="space-y-2">
+                        <li><strong>Email:</strong> support@mcafee.com</li>
+                        <li><strong>Live Chat:</strong> <a href="#" class="underline hover:text-mcafee-red">Start Chat</a></li>
+                    </ul>
+                </div>
+                <div class="bg-white text-gray-800 p-8 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-mcafee-red mb-4">Send a Message</h3>
+                    <div class="space-y-4">
+                        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg">
+                        <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-lg">
+                        <textarea placeholder="Your Message" class="w-full p-3 border rounded-lg h-32"></textarea>
+                        <button class="bg-mcafee-red text-white px-6 py-3 rounded-lg w-full hover:bg-mcafee-red-dark">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-mcafee-dark text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">About McAfee</h4>
+                    <p>McAfee provides top-tier antivirus and cybersecurity solutions to protect you online.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="tel:+18447092550" class="hover:text-mcafee-red">Call Support</a></li>
+                        <li><a href="#faqs" class="hover:text-mcafee-red">FAQs</a></li>
+                        <li><a href="#" class="hover:text-mcafee-red">Community Forum</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-mcafee-red">Twitter</a></li>
+                        <li><a href="#" class="hover:text-mcafee-red">Facebook</a></li>
+                        <li><a href="#" class="hover:text-mcafee-red">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-center mt-8">&copy; 2025 McAfee, LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFAQ(button) {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('span');
+            answer.classList.toggle('hidden');
+            icon.textContent = answer.classList.contains('hidden') ? '+' : '−';
+        }
+    </script>
+</body>
+</html>
