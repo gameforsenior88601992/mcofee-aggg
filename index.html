@@ -20,6 +20,15 @@
         .animate-pulse-cta {
             animation: pulse 2s infinite;
         }
+        /* Enhanced Button Styling */
+        .call-button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            font-size: 1.125rem;
+            font-weight: bold;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+        }
     </style>
 </head>
 <body class="bg-gray-100 font-sans">
@@ -27,8 +36,8 @@
     <header class="bg-mcafee-dark text-white py-4 sticky top-0 z-10">
         <div class="container mx-auto flex justify-between items-center px-4">
             <div class="text-2xl font-bold flex items-center">
-                
-                McAfee Support
+                <span class="text-mcafee-red text-3xl font-extrabold">McAfee</span>
+                <span class="ml-2">Support</span>
             </div>
             <nav class="space-x-4">
                 <a href="#home" class="hover:text-mcafee-red">Home</a>
@@ -56,17 +65,17 @@
                 <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
                     <h3 class="text-xl font-semibold text-mcafee-red mb-4">Activate Your Product</h3>
                     <p class="mb-4 text-gray-600">Struggling to activate your McAfee subscription? Call us for quick help.</p>
-                    <a href="tel:+18447092550" class="text-mcafee-red hover:underline">Call Now</a>
+                    <a href="tel:+18447092550" class="bg-mcafee-red text-white call-button hover:bg-mcafee-red-dark">Call Now</a>
                 </div>
                 <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
                     <h3 class="text-xl font-semibold text-mcafee-red mb-4">Fix Technical Issues</h3>
                     <p class="mb-4 text-gray-600">Installation or performance problems? Our experts can resolve them.</p>
-                    <a href="tel:+18447092550" class="text-mcafee-red hover:underline">Call Now</a>
+                    <a href="tel:+18447092550" class="bg-mcafee-red text-white call-button hover:bg-mcafee-red-dark">Call Now</a>
                 </div>
                 <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
                     <h3 class="text-xl font-semibold text-mcafee-red mb-4">Billing & Subscriptions</h3>
                     <p class="mb-4 text-gray-600">Need help with payments or renewals? Contact us today.</p>
-                    <a href="tel:+18447092550" class="text-mcafee-red hover:underline">Call Now</a>
+                    <a href="tel:+18447092550" class="bg-mcafee-red text-white call-button hover:bg-mcafee-red-dark">Call Now</a>
                 </div>
             </div>
         </div>
